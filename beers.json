@@ -1,0 +1,9 @@
+{
+  "beers": [{
+    "image": "https://s3.amazonaws.com/brewerydbapi/beer/L7OSOj/upload_66dPbI-large.png",
+    "brewery": "Ninkasi",
+    "name": "Tricerahops",
+    "style": "IPA",
+    "cost": 4.25
+    }]
+}
