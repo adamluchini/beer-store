@@ -1,0 +1,23 @@
+<form>
+  <div class="">
+    <label for="image">Image URL</label>
+    {{input value=image id="image"}}
+  </div>
+  <div class="">
+    <label for="brewery">Brewery</label>
+    {{input value=brewery id="brewery"}}
+  </div>
+  <div class="">
+    <label for="name">Name</label>
+    {{input value=name id="name"}}
+  </div>
+  <div class="">
+    <label for="style">Style</label>
+    {{input value=style id="style"}}
+  </div>
+  <div class="">
+    <label for="cost">Cost</label>
+    {{input value=cost id="cost"}}
+  </div>
+  <button {{action 'saveBeer'}}>List Beer</button>
+</form>
