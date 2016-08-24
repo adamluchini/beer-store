@@ -1,1 +1,7 @@
 {{new-beer saveBeer="saveBeer"}}
+
+<ul>
+  {{#each model as |beer|}}
+  {{admin-tile beer=beer deleteBeer="deleteBeer"}}
+  {{/each}}
+</ul>

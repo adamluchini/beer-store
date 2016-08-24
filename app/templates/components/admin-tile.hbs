@@ -1,0 +1,34 @@
+
+
+<li>{{beer.brewery}} - {{beer.name}}
+
+
+  {{#if editListingForm}}
+  <form>
+    <div class="">
+      <label for="image">Image URL</label>
+      {{input value=image id="image" placeholder=beer.image}}
+    </div>
+    <div class="">
+      <label for="brewery">Brewery</label>
+      {{input value=brewery id="brewery" placeholder=beer.brewery}}
+    </div>
+    <div class="">
+      <label for="name">Name</label>
+      {{input value=name id="name" placeholder=beer.name}}
+    </div>
+    <div class="">
+      <label for="style">Style</label>
+      {{input value=style id="style" placeholder=beer.style}}
+    </div>
+    <div class="">
+      <label for="cost">Cost</label>
+      {{input value=cost type=number id="cost" placeholder=beer.cost}}
+    </div>
+    <button {{action 'editListingForm'}}>List Beer</button>
+  </form>
+  {{else}}
+  <button {{action 'edit'}}>Edit Listing</button>
+  {{/if}}
+
+  <button {{action "delete" beer}}>Delete Item</button></li>
