@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  editListingForm: false,
+  editBeerForm: false,
 
   actions: {
     delete(beer){
@@ -9,19 +9,5 @@ export default Ember.Component.extend({
         this.sendAction('deleteBeer', beer);
       }
     },
-    editListingForm(){
-      this.set('editListingForm', true);
-    },
-    edit(beer){
-      var params = {
-        image: this.get('image'),
-        brewery: this.get('brewery'),
-        name: this.get('name'),
-        style: this.get('style'),
-        cost: this.get('cost'),
-      };
-      this.set('editListingForm', false);
-      this.sendAction('edit', beer, params);
-    }
   }
 });

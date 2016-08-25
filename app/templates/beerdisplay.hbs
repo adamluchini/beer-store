@@ -1,0 +1,10 @@
+{{beer-detail beer=model.beer}}
+{{new-comment saveComment="saveComment" beer=model.beer}}
+
+{{star-rating item=beer rating=beer.rating on-click="updateRating"}}
+{{edit-beer beer=model.beer edit="edit"}}
+
+
+{{#each model.beer.comments as |comment|}}
+  {{comment.comment}}
+{{/each}}

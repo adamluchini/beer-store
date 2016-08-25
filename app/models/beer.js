@@ -6,4 +6,6 @@ export default DS.Model.extend({
   name: DS.attr(),
   style: DS.attr(),
   cost: DS.attr(),
+  comments: DS.hasMany('comment', {async: true}),
+  rating: DS.attr(),
 });

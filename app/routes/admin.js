@@ -14,14 +14,5 @@ export default Ember.Route.extend({
       beer.destroyRecord();
       this.transitionTo('admin');
     },
-    edit(beer, params){
-      Object.keys(params).forEach(function(key){
-        if(params[key]!==undefined){
-          beer.set(key,params[key]);
-        }
-      });
-      beer.save();
-      this.transitionTo('admin');
-    }
   }
 });

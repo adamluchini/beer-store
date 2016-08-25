@@ -9,6 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('beers');
   this.route('admin');
+  this.route('beerdisplay', {path:'/beerdisplay/:beer_id'});
 });
 
 export default Router;

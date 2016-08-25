@@ -1,0 +1,17 @@
+{{#if addNewComment}}
+  <h2>Comments:</h2>
+  <form>
+    <div>
+      <label for ="comment">Comment on {{beer.name}}:</label>
+      {{textarea value=comment id="comment"}}
+      <button {{action 'saveComment' comment}}>Save</button>
+      </div>
+    </form>
+
+    <form>
+      <input type="radio" name="posRating" value="positive"> Positive<br>
+      <input type="radio" name="negRating" value="negative"> Negative<br>
+    </form>
+  {{else}}
+  <button {{action 'commentFormShow'}}>Comment</button>
+{{/if}}
